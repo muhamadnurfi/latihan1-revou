@@ -9,7 +9,7 @@
   width: 100%;
   border-bottom: 1px solid black;
   padding: 10px;
-  background: aliceblue;
+  background: white;
 }
 
 .logo {
@@ -40,17 +40,91 @@
   align-items: center;
 }
 
-.facilitation {
-  width: 500px;
-  height: 400px;
-}
-
 section {
   padding: 10px;
+  padding-bottom: 50px;
 }
 
 #hero > h1 {
   font-size: 21px;
   font-weight: 800;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+/* style facil */
+.facil-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 150%;
+  -webkit-border-radius: 150%;
+  -moz-border-radius: 150%;
+  -ms-border-radius: 150%;
+  -o-border-radius: 150%;
+}
+
+.facil-title {
+  padding-bottom: 30px;
+}
+
+.facil-list {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-start;
+  margin-left: 50px;
+}
+
+.facil-paragraf {
+  text-align: center;
+}
+
+/* style message us*/
+.message-title {
+  padding-bottom: 20px;
+}
+span {
+  margin-left: 50px;
+}
+
+input[type=text], select, textarea{
+  width: 30%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=date] {
+  width: 30%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.pesan {
+  padding: 40px;
+}
+
+input[type=submit]{
+  background-color: #e7e7e7;
+  border: none;
+  color: black;
+  padding: 10px 24px;
+  width: 38%;
+  text-decoration: none;
+  margin: 4px 2px;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }

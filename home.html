@@ -24,33 +24,84 @@
   <main>
     <div class="container">
       <section id="hero">
-        <h1>Hi <span id="nama"></span>, Welcome To Website</h1>
-        <p>ini adalah website latihan pertama</p>
-        <img src="header.jpg" alt="">
+        <h1 class="hero-title">Hi <span id="nama"></span>, Welcome To Website</h1>
+        <p class="hero-paragraf">ini adalah website latihan pertama</p>
+        <img 
+        class="hero-img"
+        src="header.jpg" alt="">
       </section>
-
-      <!-- <script>
-        var name = prompt("Masukkan Nama Kamu");
-      document.getElementById("nama").innerText = name;
-      </script> -->
-
       <section id="facilitation">
-        <div>
-          <h1>Our Facilitation</h1>
-          <img src="https://images.unsplash.com/photo-1547532182-bf296f6be875?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
-          <img src="https://images.unsplash.com/photo-1547532182-bf296f6be875?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
-          <img src="https://images.unsplash.com/photo-1547532182-bf296f6be875?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
+        <h1 class="facil-title">Our Facilitation</h1>
+        <div class="facil-list">
+          <div>
+            <img
+            class="facil-img" 
+            src="https://images.unsplash.com/photo-1547532182-bf296f6be875?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" 
+            alt=""
+            />
+            <p class="facil-paragraf">Profesional <br> Teacher</p>
+            <!-- <p class="facil-paragraf">Teacher</p> -->
+          </div>
+          <div>
+            <img 
+            class="facil-img"
+            src="https://images.unsplash.com/photo-1547532182-bf296f6be875?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" 
+            alt=""
+            />
+            <p class="facil-paragraf">Sport Field</p>
+          </div>
+          <div>
+            <img 
+            class="facil-img"
+            src="https://images.unsplash.com/photo-1547532182-bf296f6be875?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" 
+            alt=""
+            />
+            <p class="facil-paragraf">Classroom</p>
+          </div>
         </div>
       </section>
-      <section id="facilitation">
-        woi
+      <section id="message-us">
+        <h1 class="message-title">Message Us</h1>
+        <div class="form-section">
+          <form name="message-form" onsubmit="return validateForm()">
+            Nama <span>:</span> <input placeholder="Nama" type="text" name="full-name" />
+          <br />
+    
+          Tanggal Lahir :
+          <input type="date" name="birth-date" />
+          <br />
+    
+          Jenis Kelamin :
+          <input type="radio" id="male" name="gender" value="Laki-laki" />
+          <label for="male">Laki-Laki</label>
+          <input type="radio" id="male" name="gender" value="Perempuan" />
+          <label for="female">Perempuan</label>
+          <br />
+
+          Pesan <span>:</span>
+          <textarea class="pesan" placeholder="Pesan" name="messages"></textarea>
+          <br>
+    
+          <input type="submit" value="Submit">
+          </form>
+    
+          <div class="form-output">
+            <p>Nama: <span id="sender-full-name"></span></p>
+            <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+            <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+            <p>Pesan: <span id="sender-messages"></span></p>
+          </div>
+        </div>
       </section>
     </div>
   </main>
 
   <!-- footer -->
   <footer>
-
+    <h3>Created By MuhamadNurfirdaus</h3>
   </footer>
+
+  <script src="app.js">
+  </script>
 </body>
 </html>
