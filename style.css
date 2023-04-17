@@ -78,11 +78,9 @@ section {
 }
 
 /* style message us*/
+
 .message-title {
   padding-bottom: 20px;
-}
-span {
-  margin-left: 50px;
 }
 
 input[type=text], select, textarea{
@@ -127,4 +125,16 @@ input[type=submit]{
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
+}
+
+.form-section {
+  display: flex;
+}
+
+input[type=text] {
+  margin-right: 200px;
+}
+
+.footer {
+  float: right;
 }
